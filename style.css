@@ -44,7 +44,7 @@
 
 
 body{
-    background-color: black;
+    background: black;
     padding: 1%;
 }
 
@@ -78,18 +78,28 @@ section{
     border-radius: 8px;
     padding: var(--p);
     box-sizing: border-box;
+    background: linear-gradient(45deg, var(--gold) 10%, black 5%, black 90%,var(--gold) 90%);
 }
 
 section .right, section .left{
     aspect-ratio: 2.5;
     padding: var(--p);
-    position: relative;
 }
 
 .right{
     border-top: solid 1.5px var(--gold);
     border-left: solid 2px var(--gold);
     border-radius: 8px;
+    background: #000;
+}
+
+.right a{
+    color: var(--gold);
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
 }
 
 button{
@@ -100,6 +110,7 @@ button{
     transition: 250ms;
     padding-top: 5px;
     padding-bottom: 5px;
+    border-radius: 5px;
 }
 
 button:hover{
@@ -138,20 +149,14 @@ button a{
     margin: auto;
     text-align: justify;
     text-indent: 5%;
-    border:5px solid var(--light-purple);
     padding: var(--p) 5%;
     border-radius: 5px;
-    transition: ease-out 250ms;
 }
 
-.description:hover{
-    z-index: 2;
-    scale: 1.2;
-    background-color:#391a52d7;
-}
-
-.description button{
-    border-radius: 5px;
+.description p{
+    margin: auto;
+    text-align: center;
+    font-size: var(--h3);
 }
 
 .separator{
@@ -174,31 +179,4 @@ button a{
     height: 100%;
     width: 100%;
     border-radius: 8px;
-}
-
-.back{
-    position: absolute;
-    top: 15%;
-    left: 15%;
-    display: none;
-    width: 70%;
-    height: 70%;
-    background-color: var(--gold);
-    border-radius: 8px;
-    transition: ease-in 300ms;
-}
-
-.image:hover + .back{
-    display: flex;
-    opacity: 0.8;
-}
-
-.back:hover{
-    display: flex;
-}
-
-.back:hover button{
-    align-self: center;
-    justify-self: center;
-    display: block;
 }
