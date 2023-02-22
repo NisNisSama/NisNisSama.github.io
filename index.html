@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Untitled.png" type="image/x-icon">
+    <title>Nisaina's Portfolio</title>
+</head>
+<body>
+    <div class="title" id="Animated">
+        <h2 id="Hi" onload="typeWriter()"></h2>
+        <h1 id="Name"></h1>
+    </div>
+    <span class="separator"></span>
+    <br>
+    <div class="description">
+        <p>
+                I am a third year student in Computer Science.
+                I am passionate by numerous things such as Arts like musics, paints, drawings, films and stories and also sciences and technologies.
+        </p>        
+        <br>
+        <p>
+                This is explained by the fact that I am a very curious boy. I cannot stop myself being fascinated by everything, and discovering things and find out what our world is made of,
+                and how it works. It is not about mastering domains, it is just about the will to know. People, then say so often "How do you know all of that?", "What thing don't you know bro?", then,
+                I just answer them that I don't really know, I'm just curious and it fascinates me.
+        </p>
+        <br>
+        <p>
+                So, that is why I am into Computer Science now, coding or programming is clearly about f***ing around and finding out. Also, it is the future now, it is often joined with another domain so it is a win win for me. (And I want to build Video Games also)
+        </p>
+        <br>
+        <button>
+            <a href="RAMAROSON_HANJASOA_NISAINA_L3_IDEV.pdf">Download my resume</a>
+        </button>
+    </div>
+    <br>
+    <span class="separator"></span>
+    <br>
+    <div style="text-align: center;">
+        <h2>SOME PROJECTS I HAVE DONE</h2>
+    </div>
+    <section>
+        <div class="left">
+            <div class="image">
+                <img src="ERPEntreprise.PNG" alt="Entreprise Resource Planning">
+            </div>
+            <div class="back">
+                <button>
+                    <a href="http://127.0.0.1:8000" target="_blank" rel="noopener noreferrer">
+                        See the Project
+                    </a>
+                </button>
+            </div>
+            
+        </div>
+        <div class="right">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet blanditiis iste fuga nostrum, molestiae delectus. Obcaecati ea officiis odio nemo debitis quam eos dicta repellat. A in perspiciatis sed eveniet!</p>
+            <br>
+            <span>
+                Technologies:
+                    -Laravel 7 / PHP
+                    -Bootstrap
+                    -SQL
+            </span>
+        </div>
+    </section>
+    <br>
+    <section>
+        <div class="left">
+            <div class="image">
+                <img src="Panier.PNG" alt="Interface ReactJS">
+            </div>
+            <div class="back">
+                <button>
+                    <a href="http://127.0.0.1:3000" target="_blank" rel="noopener noreferrer">
+                        See the Project
+                    </a>
+                </button>
+            </div>
+        </div>
+        <div class="right">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet blanditiis iste fuga nostrum, molestiae delectus. Obcaecati ea officiis odio nemo debitis quam eos dicta repellat. A in perspiciatis sed eveniet!</p>
+            <br>
+            <span>
+                Technologies :
+                    -React JS / JavaScript
+                    -CSS
+            </span>
+        </div>
+    </section>
+    <br>
+    <section>
+        <div class="left">
+            <div class="image">
+                <img src="zazaup.png" alt="Projet ZazaUp">
+            </div>
+            <div class="back">
+                <button>
+                    <a href="http://127.0.0.1:3000" target="_blank" rel="noopener noreferrer">
+                        See the Project
+                    </a>
+                </button>
+            </div>
+        </div>
+        <div class="right">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet blanditiis iste fuga nostrum, molestiae delectus. Obcaecati ea officiis odio nemo debitis quam eos dicta repellat. A in perspiciatis sed eveniet!</p>
+            <br>
+            <span>
+                Technologies:
+                    -AngularJS
+                    -TypeScript
+                    -OpenAI
+            </span>
+        </div>
+    </section>
+    <br>
+    <br>
+    <div class="title">
+        <h1>How to reach me ?</h1>
+        <br>
+        <span>
+            <h3>Email :</h3>
+            <p>nisaina.hanjasoa.ramaroson@esti.mg</p>
+        </span>
+        <span>
+            <h3>Facebook :</h3>
+            <p>Nisaina Hanjasoa Ramaroson</p>
+        </span>
+        <span>
+            <h3>Phone Number :</h3>
+            <p>+261 32 51 196 63 / +261 34 94 322 65</p>
+        </span>
+    </div>
+    <br>
+    <br>
+    <span class="separator"></span>
+</body>
+
+<script>
+    var i = 0;
+    var j = 0;
+    var hi = 'Hi ! I am';
+    var name = 'Nisaina Hanjasoa Ramaroson';
+    var speed = 50;
+    
+    function typeWriter() {
+      if (i < hi.length) {
+        document.getElementById("Hi").innerHTML += hi.charAt(i);
+        i++;
+      }
+      if (j < name.length) {
+        document.getElementById("Name").innerHTML += name.charAt(j);
+        j++;
+      }
+      setTimeout(typeWriter, speed);
+      document.getElementById("Animated").removeEventListener("load");
+    }
+
+    document.getElementById("Animated").addEventListener("load", typeWriter());
+</script>
+
+</html>
