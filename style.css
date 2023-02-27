@@ -5,12 +5,16 @@
     --light-purple: #4A2364;
     --alice-blue: rgba(225, 242, 254, 1);
     --gold: #FFD700;
-    --blue: #00D5FE;
+    --blue: #00FFFF;
     --p: 1.3em;
     --h3: calc(1.20 * var(--p));/* 1.20x p */
     --h2: calc(1.83 * var(--p));/* 1.43x p */
     --h1: calc(2.3 * var(--p));/* 2.3x p */
     font-family: monospace;
+}
+@font-face {
+    font-family: Space-explorer;
+    src: url(SPACE\ EXPLORER.woff);
 }
 
 *{
@@ -61,18 +65,20 @@ h3{
 h2{
     font-size: var(--h2);
     color: var(--gold);
+    font-family: Space-explorer;
 }
 
 h1{
     font-size: var(--h1);
     color: var(--gold);
+    font-family: Space-explorer;
 }
 
 section{
     width: 97%;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     border-bottom: solid 1px var(--gold);
     border-right: solid 2px var(--gold);
     border-radius: 8px;
@@ -102,31 +108,12 @@ section .right, section .left{
     margin-bottom: 5%;
 }
 
-button{
-    display: block;
-    margin: auto;
-    background-color: var(--gold);
-    border: none;
-    transition: 250ms;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 5px;
+.right a:hover{
+    color:var(--blue);
 }
 
-button:hover{
-    transform: translateY(-5px);
-    box-shadow: 0px 1px 1px 3px var(--darker-purple);
-}
-
-button a{
-    box-sizing: border-box;
-    display: block;
-    text-decoration: none;
-    color: var(--darker-purple);
-    /* width: calc(var(--h1)*2.5); */
-    width: 99%;
-    height: fit-content;
-    text-align: center;
+#Hi{
+    opacity: 0.75;
 }
 
 .title{
@@ -139,24 +126,53 @@ button a{
 
 .title span{
     display: inline-block;
-    padding-left: var(--p);
-    padding-right: var(--p);
+    min-width: 300px;
+    max-width: 100%;
+    padding: var(--p);
+    box-sizing: border-box;
 }
 
 .description{
-    width: 70%;
     height: fit-content;
     margin: auto;
-    text-align: justify;
-    text-indent: 5%;
     padding: var(--p) 5%;
-    border-radius: 5px;
 }
 
 .description p{
     margin: auto;
     text-align: center;
     font-size: var(--h3);
+}
+
+.links{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 30px;
+    row-gap: var(--p);
+}
+
+.links button{
+    display: inline-block;
+    min-height: var(--h1);
+    background: none;
+    border: var(--gold) solid 2px;
+    border-radius: 8px;
+}
+
+.links button:hover{
+    border: var(--blue) solid 2px;
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.links button a{
+    text-decoration: none;
+    color: aliceblue;
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px;
 }
 
 .separator{
