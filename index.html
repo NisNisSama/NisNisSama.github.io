@@ -14,9 +14,11 @@
     <meta property="og:type" content="website"/>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slide.css">
     <link rel="stylesheet" href="construction.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="shortcut icon" href="Untitled.png" type="image/x-icon">
+    <script src="slide.js"></script>
     <title>Nisaina's Portfolio</title>
 </head>
 <body>
@@ -72,7 +74,7 @@
             </svg>
         
         </div>
-        <p>THIS SITE IS STILL UNDER CONSTRUCTION ...</p>
+        <p class="glitch">THIS SITE IS STILL UNDER CONSTRUCTION ...</p>
         <br>
         <div class="links">
             <button>
@@ -90,13 +92,27 @@
     <span class="separator"></span>
     <br>
     <div style="text-align: center;">
-        <h2>SOME PROJECTS I HAVE DONE</h2>
+        <h2 class="glitch">SOME PROJECTS I HAVE DONE</h2>
     </div>
     <section class="animate__animated animate__backInLeft">
         <div class="left">
-            <div class="image">
+            <div class="image mySlides fade">
                 <img src="https://lh3.googleusercontent.com/Xesfydlv_Vbx-tOBNhKj6rDSaNLf7SE9uAVr2IBwhO1paXK0iSTrWymuPAsTSlZWWhMx-7YNcvzttO1HSKv9dAfZKIs6uB5RJ8iV_d75Ch7-Z_i0QlqbaIB1KA1O2M6DOqEC6f1k=w2400" alt="Entreprise Resource Planning">
-            </div>            
+            </div>
+            <div class="image mySlides fade">
+                <img src="https://lh3.googleusercontent.com/PmMCS01mG1LMvSjb-WePH2WtZYD7_7fSmlHiq4vGqEmupH71HhZqJxfmqr5r1eDCrFsnyuu6UM8TMdhl4IoYSHYQkfFv7Gy5LR0n85XAhkyrqoTK1wgoV9_plbokTqxSGE4zZkdB=w2400" alt="Interface ReactJS">
+            </div>
+            <div class="image mySlides fade">
+                <img src="https://lh3.googleusercontent.com/uBM11GXsW9GXyptkRdTrCornO-OsPcHeVCQmKejyE_PU17VeEiyLhNvIsY3d9VH2s6kE5-oRQ_7WhdunBNEzHgybTWrEnsnDLXplmbOznegAiIIz4xbztCHrymevsBxuQNmyiyr7=w2400" alt="Projet ZazaUp">
+            </div>
+            <!-- Next and previous buttons -->
+            <!-- <a class="prev" onclick="plusSlides(-1, 'mySlides' ,'dot1')">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 'mySlides' ,'dot1')">&#10095;</a> -->
+            <div style="text-align:center">
+                <span class="dot dot1" onclick="currentSlide(1, 'mySlides' ,'dot1')"></span>
+                <span class="dot dot1" onclick="currentSlide(2, 'mySlides' ,'dot1')"></span>
+                <span class="dot dot1" onclick="currentSlide(3, 'mySlides' ,'dot1')"></span>
+            </div>
         </div>
         <div class="right">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet blanditiis iste fuga nostrum, molestiae delectus. Obcaecati ea officiis odio nemo debitis quam eos dicta repellat. A in perspiciatis sed eveniet!</p>
@@ -115,8 +131,22 @@
     <br>
     <section class="animate__animated animate__backInLeft">
         <div class="left">
-            <div class="image">
+            <div class="image mySlides2 fade">
                 <img src="https://lh3.googleusercontent.com/PmMCS01mG1LMvSjb-WePH2WtZYD7_7fSmlHiq4vGqEmupH71HhZqJxfmqr5r1eDCrFsnyuu6UM8TMdhl4IoYSHYQkfFv7Gy5LR0n85XAhkyrqoTK1wgoV9_plbokTqxSGE4zZkdB=w2400" alt="Interface ReactJS">
+            </div>
+            <div class="image mySlides2 fade">
+                <img src="https://lh3.googleusercontent.com/PmMCS01mG1LMvSjb-WePH2WtZYD7_7fSmlHiq4vGqEmupH71HhZqJxfmqr5r1eDCrFsnyuu6UM8TMdhl4IoYSHYQkfFv7Gy5LR0n85XAhkyrqoTK1wgoV9_plbokTqxSGE4zZkdB=w2400" alt="Interface ReactJS">
+            </div>
+            <div class="image mySlides2 fade">
+                <img src="https://lh3.googleusercontent.com/uBM11GXsW9GXyptkRdTrCornO-OsPcHeVCQmKejyE_PU17VeEiyLhNvIsY3d9VH2s6kE5-oRQ_7WhdunBNEzHgybTWrEnsnDLXplmbOznegAiIIz4xbztCHrymevsBxuQNmyiyr7=w2400" alt="Projet ZazaUp">
+            </div>
+            <!-- Next and previous buttons -->
+            <!-- <a class="prev" onclick="plusSlides(-1, 'mySlides2' ,'dot2')">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 'mySlides2' ,'dot2')">&#10095;</a> -->
+            <div style="text-align:center">
+                <span class="dot dot2" onclick="currentSlide(1, 'mySlides2' ,'dot2')"></span>
+                <span class="dot dot2" onclick="currentSlide(2, 'mySlides2' ,'dot2')"></span>
+                <span class="dot dot2" onclick="currentSlide(3, 'mySlides2' ,'dot2')"></span>
             </div>
         </div>
         <div class="right">
@@ -135,8 +165,25 @@
     <br>
     <section class="animate__animated animate__backInLeft">
         <div class="left">
-            <div class="image">
+            <div class="image mySlides3 fade">
                 <img src="https://lh3.googleusercontent.com/uBM11GXsW9GXyptkRdTrCornO-OsPcHeVCQmKejyE_PU17VeEiyLhNvIsY3d9VH2s6kE5-oRQ_7WhdunBNEzHgybTWrEnsnDLXplmbOznegAiIIz4xbztCHrymevsBxuQNmyiyr7=w2400" alt="Projet ZazaUp">
+            </div><div class="image mySlides3 fade">
+                <img src="https://lh3.googleusercontent.com/PmMCS01mG1LMvSjb-WePH2WtZYD7_7fSmlHiq4vGqEmupH71HhZqJxfmqr5r1eDCrFsnyuu6UM8TMdhl4IoYSHYQkfFv7Gy5LR0n85XAhkyrqoTK1wgoV9_plbokTqxSGE4zZkdB=w2400" alt="Interface ReactJS">
+            </div>
+            <div class="image mySlides3 fade">
+                <img src="https://lh3.googleusercontent.com/PmMCS01mG1LMvSjb-WePH2WtZYD7_7fSmlHiq4vGqEmupH71HhZqJxfmqr5r1eDCrFsnyuu6UM8TMdhl4IoYSHYQkfFv7Gy5LR0n85XAhkyrqoTK1wgoV9_plbokTqxSGE4zZkdB=w2400" alt="Interface ReactJS">
+            </div>
+            <div class="image mySlides3 fade">
+                <img src="https://lh3.googleusercontent.com/Xesfydlv_Vbx-tOBNhKj6rDSaNLf7SE9uAVr2IBwhO1paXK0iSTrWymuPAsTSlZWWhMx-7YNcvzttO1HSKv9dAfZKIs6uB5RJ8iV_d75Ch7-Z_i0QlqbaIB1KA1O2M6DOqEC6f1k=w2400" alt="Entreprise Resource Planning">
+            </div>
+            <!-- Next and previous buttons -->
+            <!-- <a class="prev" onclick="plusSlides(-1, 'mySlides3' ,'dot3')">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 'mySlides3' ,'dot3')">&#10095;</a> -->
+            <div style="text-align:center">
+                <span class="dot dot3" onclick="currentSlide(1, 'mySlides3' ,'dot3')"></span>
+                <span class="dot dot3" onclick="currentSlide(2, 'mySlides3' ,'dot3')"></span>
+                <span class="dot dot3" onclick="currentSlide(3, 'mySlides3' ,'dot3')"></span>
+                <span class="dot dot3" onclick="currentSlide(4, 'mySlides3' ,'dot3')"></span>
             </div>
         </div>
         <div class="right">
@@ -156,7 +203,7 @@
     <br>
     <br>
     <div class="title">
-        <h1>How to reach me ?</h1>
+        <h1 class="glitch">How to reach me ?</h1>
         <br>
         <span>
             <h3>Email :</h3>
@@ -193,10 +240,10 @@
         j++;
       }
       setTimeout(typeWriter, speed);
-      document.getElementById("Animated").removeEventListener("load");
     }
 
     document.getElementById("Animated").addEventListener("load", typeWriter());
+    document.getElementById("Animated").removeEventListener("load", typeWriter());
 </script>
 
 </html>

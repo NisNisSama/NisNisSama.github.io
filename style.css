@@ -90,6 +90,12 @@ section{
 section .right, section .left{
     aspect-ratio: 2.5;
     padding: var(--p);
+    position:relative;
+}
+
+.left{
+    background: black;
+    border-radius: 8px;
 }
 
 .right{
@@ -185,7 +191,7 @@ section .right, section .left{
 .image{
     display: block;
     width: 95%;
-    height: 100%;    
+    height: 95%;    
     box-sizing: border-box;
     margin: auto;
 }
