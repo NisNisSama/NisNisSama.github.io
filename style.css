@@ -197,7 +197,7 @@ section .right, section .left{
 }
 
 .image img {
-    object-fit: fill;
+    object-fit: scale-down;
     height: 100%;
     width: 100%;
     border-radius: 8px;
