@@ -110,8 +110,8 @@ section .right, section .left{
     display: block;
     width: 100%;
     text-align: center;
-    margin-top: 10%;
-    margin-bottom: 5%;
+    margin-top: 5%;
+    margin-bottom: 1%;
 }
 
 .right a:hover{
